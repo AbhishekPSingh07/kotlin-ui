@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/animator/button_highlight_animator.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <set>
+            <objectAnimator
+                android:propertyName="borderWidth"
+                android:valueTo="4dp"
+                android:valueType="floatType"
+                android:duration="200"/>
+            <objectAnimator
+                android:propertyName="strokeColor"
+                android:valueTo="@color/white"
+                android:valueType="colorType"
+                android:duration="200"/>
+        </set>
+    </item>
+    <!-- Default state -->
+    <item>
+        <set>
+            <objectAnimator
+                android:propertyName="borderWidth"
+                android:valueTo="2dp"
+                android:valueType="floatType"
+                android:duration="200"/>
+            <objectAnimator
+                android:propertyName="strokeColor"
+                android:valueTo="@color/button_border_default"
+                android:valueType="colorType"
+                android:duration="200"/>
+        </set>
+    </item>
+</selector>
