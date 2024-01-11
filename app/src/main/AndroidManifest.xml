@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Netclan_clone"
         tools:targetApi="31">
+        <activity android:name=".RefinePage"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"

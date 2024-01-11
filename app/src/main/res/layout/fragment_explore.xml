@@ -4,7 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ExploreFragment">
+    tools:context=".Explore.ExploreFragment">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -12,7 +16,8 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp">
+            android:id="@+id/constaintLayout"
+            tools:ignore="MissingConstraints">
 
                 <Button
                     android:id="@+id/button1"
@@ -49,5 +54,27 @@
                     tools:ignore="MissingConstraints" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/constaintLayout"
+            android:layout_margin="8dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search..."
+            app:layout_constraintTop_toBottomOf="@id/constaintLayout"
+        />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/searchView"
+                    android:layout_margin="10dp"
+                    android:padding="8dp"
+                    android:paddingBottom="56px"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
