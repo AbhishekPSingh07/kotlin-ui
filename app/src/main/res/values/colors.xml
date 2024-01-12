@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="button_border_highlight">#FFFFFF</color>
     <color name="button_border_default">#000000</color>
+    <color name="blue">#0000FF</color>
 </resources>

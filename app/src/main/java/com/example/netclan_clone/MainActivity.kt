@@ -81,7 +81,6 @@ class MainActivity : AppCompatActivity() {
         if(id ==  R.id.refine){
             val intent = Intent(this, RefinePage::class.java)
             startActivity(intent)
-
         }
         return true
     }
